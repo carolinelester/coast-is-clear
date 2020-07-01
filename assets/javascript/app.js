@@ -8,15 +8,6 @@ $(document).ready(function() {
 
 // Scrolling Effect
 
-$(window).on("scroll", function() {
-  if($(window).scrollTop()) {
-        $('nav').addClass('blue');
-  }
-
-  else {
-        $('nav').removeClass('blue');
-  }
-})
 
   // This is our API key
   var mapAPIKey = "AIzaSyCAgC_4Ah49trBRbFVc3emcuZ-vzz8yEcA";

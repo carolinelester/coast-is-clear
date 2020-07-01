@@ -106,7 +106,7 @@ nav ul li a {
 .menu-icon {
     line-height: 60px;
     width: 100%;
-    background: rgba(75, 142, 221, 0.67);
+    
     text-align: right;
     box-sizing: border-box;
     padding: 15px 24px;
@@ -114,41 +114,6 @@ nav ul li a {
     color: #fff;
     display: none;
 }
-
-@media(max-width: 786px) {
-
-    .logo {
-          position: fixed;
-          top: 0;
-          margin-top: 16px;
-    }
-
-    nav ul {
-          max-height: 0px;
-          background: rgba(75, 142, 221, 0.67);
-    }
-
-    nav.black ul {
-          background: rgba(75, 142, 221, 0.67);
-    }
-
-    .showing {
-          max-height: 34em;
-    }
-
-    nav ul li {
-          box-sizing: border-box;
-          width: 100%;
-          padding: 24px;
-          text-align: center;
-    }
-
-    .menu-icon {
-          display: block;
-    }
-
-}
-
 
 html {
     line-height: 1.15;
@@ -630,7 +595,7 @@ html {
     text-shadow: blanchedalmond 5px !important;
     background-size: cover;
     background-position: center center;
-    padding: 15px;
+    padding: 0px;
   }
   
   .s01 form {
@@ -725,6 +690,90 @@ html {
     background: #2d62d3;
 }
 
+footer {
+  width: 100%;
+  background: url("../images/water4.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.block {
+  height: 250px;
+  color: white;
+  background: rgba(86,61,124,.25);
+  margin-bottom: 30px;
+  text-shadow: 1px 1px black !important;
+}
+
+#scroll {
+  font-family: "Helvetica Neue",sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+#scrollstyle {
+  background-color: rgb(13, 64, 122, 0.75);
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 0 !important;
+  margin-right: 0;
+  margin-left: 0;
+  overflow: hidden;
+  text-align: center !important;
+  padding-left: 20px;
+}
+
+#temp {
+color: white !important; 
+font-size: 30px !important;
+z-index: 2;
+text-shadow: 1px 1px black !important;
+}
+
+
+/* Social Media Links in Footer ================================================================================================================*/
+.fa {
+padding: 60px;
+font-size: 50px;
+text-align: center;
+text-decoration: none;
+border-radius: 50%;
+
+}
+
+.fa:hover {
+opacity: 0.7;
+}
+
+.fa-instagram {
+background: #12578880;
+color: white;
+}
+
+.fa-linkedin {
+background: #007cb580;
+color: white;
+}
+
+.fa-facebook {
+background: #3B599880;
+color: white;
+}
+
+#data,
+#temp, 
+#warning {
+  font-family: "Helvetica Neue",sans-serif;
+    font-weight: lighter !important;
+
+}
+.block {
+  font-family: "Helvetica Neue",sans-serif;
+    font-weight: lighter !important;
+}
+
+
 /* Responsive ===================================================================================================================================*/
 @media screen and (max-width: 992px) {
     .s01 form legend {
@@ -743,7 +792,7 @@ html {
 @media screen and (max-width: 767px) {
     .s01 form legend {
       font-size: 40px;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
     .s01 form .inner-form {
       -ms-flex-wrap: wrap;
@@ -771,63 +820,31 @@ html {
     .s01 form .inner-form .input-field.third-wrap .btn-search {
       font-size: 16px;
     }
-}
-
-footer {
-    width: 100%;
-    background: url("../images/water4.jpg") no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.block {
-    height: 250px;
-    color: white;
-    background: rgba(86,61,124,.15);
-    margin-bottom: 30px;
-    text-shadow: 1px 1px black !important;
-}
-
-#scroll {
-    margin-top: 40px !important;
-    text-align: center !important;
-    font-family: "Helvetica Neue",sans-serif;
-    font-weight: lighter;
-    font-size: 30px;
-}
-
-#temp {
-  color: white !important; 
-  font-size: 30px !important;
-  z-index: 2;
-  text-shadow: 1px 1px black !important;
+    .logo {
+      position: fixed;
+      top: 15px;
+      margin-top: 16px;
+    }
+    nav ul {
+      max-height: 0px;
+      background: rgba(75, 142, 221, 0.67);
+    }
+    nav.black ul {
+      background: rgba(75, 142, 221, 0.67);
+    }
+    .showing {
+      max-height: 34em;
+    }
+    nav ul li {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+    }
+    .menu-icon {
+      display: block;
+    }
+  }
 }
 
 
-/* Social Media Links in Footer ================================================================================================================*/
-.fa {
-  padding: 60px;
-  font-size: 50px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-instagram {
-  background: #12578880;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007cb580;
-  color: white;
-}
-
-.fa-facebook {
-  background: #3B599880;
-  color: white;
-}
